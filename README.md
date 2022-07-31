@@ -7,7 +7,7 @@ This script solves a particular problem which default functionality of ab does n
 
 Now in real world sceario, a URL will be getting hit by a bot/traffic with some regularilty irrespective whether the previous requests have been completed or not. 
 
-The script test-ab.sh solves this problem by iterating over a certain fixed time frame whithout considering the status of the previous requests. In the end this script will mention a file which contains the timeslines of all the requests have the same format as -g switch used with ab i.e. TSV (tab separated).
+The script test-ab.sh solves this problem by iterating over a certain fixed time frame whithout considering the status of the previous requests. In the end this script will mention a file which contains the timelines of all the requests have the same format as -g switch used with ab i.e. TSV (tab separated).
 
 This scripts ab and bc scripts/packages.
 
