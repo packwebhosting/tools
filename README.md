@@ -3,7 +3,7 @@ Stress testing and other useful tools
 ### test-ab.sh
 Stress testing using ab a.k.a. Apache Benchmark . 
 
-This script solves a particular problem which default functionality of ab does not solve i.e. if we are to run say 5 concurrent connections over 60 iterations , the 1st iteration will only end when all the 1st 5 requests have been handled or taken care off. Only after that the 2sd iteration will begin.
+This script solves a particular problem which default functionality of ab does not solve i.e. if we are to run say 5 concurrent connections over 60 iterations , the 1st iteration will only end when all the 1st 5 requests have been handled or taken care off. Only after that the 2nd iteration will begin.
 
 Now in real world sceario, a URL will be getting hit by a bot/traffic with some regularilty irrespective whether the previous requests have been completed or not. 
 
