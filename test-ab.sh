@@ -127,3 +127,8 @@ head -1 1-* > $log_folder/report.txt  ;for (( i = 1; i <= $iterations; i++ )) ; 
 
 echo "Please check report at : $log_folder/report.txt"
 
+tot=0;for i in `tail -n+2 $log_folder/report.txt |sed -r 's/\t/ /g'|cut -d ' ' -f9`; do tot=$((tot+i)); done; echo $tot
+
+echo -n "Total requests : $(echo ${concurrency}*${iterations}|bc), Total time : ${tot}, Time per request : "  ; val=`echo  "scale=3; ${tot}/(${concurrency}*${iterations})"|bc`; echo $val
+
+
